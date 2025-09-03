@@ -1,5 +1,5 @@
 import { Tabs } from "expo-router";
-    import { Server, Settings, Database } from "lucide-react-native";
+    import { Server, Settings, Database, Cloud } from "lucide-react-native";
     import React from "react";
 
     import Colors from "@/constants/colors";
@@ -17,6 +17,13 @@ import { Tabs } from "expo-router";
             options={{
               title: "Guia POKT",
               tabBarIcon: ({ color }) => <Server color={color} />,
+            }}
+          />
+          <Tabs.Screen
+            name="vps-setup"
+            options={{
+              title: "Setup VPS",
+              tabBarIcon: ({ color }) => <Cloud color={color} />,
             }}
           />
           <Tabs.Screen
